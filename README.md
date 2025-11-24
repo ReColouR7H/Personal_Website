@@ -1,2 +1,2 @@
 # Personal_Website
-My Achievement Wall
+This is my page https://recolour7h.github.io/Personal_Website/
