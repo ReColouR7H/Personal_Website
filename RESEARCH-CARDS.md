@@ -1,14 +1,15 @@
-# Editar las tarjetas de investigación
+# Investigaciones y publicaciones
 
-Las dos tarjetas son ejemplos de presentación, no publicaciones reales. Están en la sección `id="projects"` de `index-es.html` y `index.html`.
+Las fichas completas están en `research-es.html` y `research.html`. La portada enlaza a cada publicación.
 
-Para publicar una investigación, edita el bloque `<details class="project-card">` correspondiente:
+Para editar o añadir una publicación, actualiza `research-data.json`. Cada registro contiene el enlace original, la autoría y el contenido en español e inglés. Los informes de saneamiento acreditan a Andrés Soto Ticse como autor principal, conforme a su indicación. La publicación sobre aerolíneas conserva los coautores del PDF original.
 
-- Cambia la etiqueta «Ejemplo de investigación» por el tipo de publicación.
-- Sustituye el título `<h3>` y el párrafo del `<summary>` por el título y una descripción breve.
-- En `.project-body`, coloca el resumen y los datos de autoría o fecha.
-- Activa el enlace comentado, reemplaza `https://YOUR-PUBLICATION-URL` por la URL real o la ruta de tu PDF y elimina `<!-- Add a publication:` y `-->` alrededor del enlace.
+Desde la raíz del repositorio, ejecuta:
 
-Para añadir otra tarjeta, duplica el bloque completo y asigna un `id` único. Mantén el mismo contenido en ambas versiones de idioma. El diseño ajusta automáticamente las tarjetas de dos columnas en escritorio a una columna en móvil.
+```sh
+node scripts/build-research.cjs
+```
 
-Las fichas se abren con clic, Enter o la barra espaciadora, sin JavaScript. Los títulos y etiquetas quedan alineados a la izquierda; los párrafos de lectura usan texto justificado.
+El script genera las páginas de investigación y actualiza la sección de publicaciones de la portada. Edita los datos antes de regenerar, ya que las fichas HTML generadas se sobrescriben. Asigna un `id` único a cada nuevo registro para mantener enlaces directos estables.
+
+El diseño está en `assets/css/research.css`. Las fichas ocupan todo el ancho de lectura y mantienen los párrafos justificados. Los enlaces a Google Docs conservan los permisos de acceso de los documentos originales.

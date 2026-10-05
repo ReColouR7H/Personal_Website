@@ -1,0 +1,128 @@
+[
+  {
+    "id": "cloracion-rural",
+    "authors": "Andrés Soto Ticse",
+    "leadAuthor": true,
+    "url": "https://docs.google.com/document/d/1JvGoWiawelXZRydw6HN2vJoUY29q9XJQ/edit",
+    "es": {
+      "title": "Retos de la cloración a partir de la experiencia de Water For People",
+      "type": "Nota técnica",
+      "date": "10 de octubre de 2025",
+      "scope": "Asunción, Cascas y Reque, Perú. Periodo 2021 a 2025.",
+      "context": "Experiencia de Water For People en sistemas rurales de agua.",
+      "intro": "Un análisis de las condiciones que permiten sostener la cloración en los sistemas rurales de agua de Asunción, Cascas y Reque.",
+      "sections": [
+        ["Pregunta de investigación", "¿Qué factores están asociados con una cloración adecuada y qué medidas pueden mejorar su continuidad en los sistemas rurales estudiados? La nota examina la gestión comunitaria y las restricciones operativas que enfrentan los prestadores."],
+        ["Datos y metodología", "El estudio combina información de Water For People y DATASS para el periodo 2021 a 2025. La muestra final comprende 549 observaciones. Se estima una regresión logística ponderada por número de hogares, con errores agrupados por comunidad. Las entrevistas a operadores y personal de las Áreas Técnicas Municipales complementan el análisis estadístico."],
+        ["Hallazgos", "El monitoreo de la calidad del agua realizado por las JASS presenta la asociación más consistente con una cloración adecuada. El informe reporta odds ratios de hasta 12; esta medida compara las odds del resultado y no significa que la probabilidad se multiplique por doce. Las cuotas que cubren los costos operativos favorecen la continuidad del abastecimiento de insumos. Los testimonios muestran dificultades de dosificación y resistencias al sabor y olor del agua clorada."],
+        ["Aplicación a políticas públicas", "Las recomendaciones priorizan el monitoreo comunitario, el financiamiento de la operación y el acompañamiento técnico permanente. La entrega de cloro requiere seguimiento para sostener su uso. Los resultados corresponden a los distritos estudiados y describen asociaciones; no constituyen una evaluación causal ni una estimación representativa de todo el Perú."]
+      ]
+    },
+    "en": {
+      "title": "Chlorination challenges: evidence from Water For People’s experience",
+      "type": "Technical note",
+      "date": "10 October 2025",
+      "scope": "Asunción, Cascas and Reque, Peru. Study period: 2021 to 2025.",
+      "context": "Water For People’s experience with rural water systems.",
+      "intro": "An analysis of the conditions that sustain chlorination in rural water systems in Asunción, Cascas and Reque.",
+      "sections": [
+        ["Research question", "Which factors are associated with adequate chlorination, and which measures could improve its continuity in the rural systems studied? The note examines community management and the operational constraints faced by service providers."],
+        ["Data and methods", "The study combines Water For People records with DATASS data for 2021 to 2025. The final sample contains 549 observations. It uses logistic regression weighted by household counts, with standard errors clustered by community. Interviews with operators and municipal technical staff complement the statistical analysis."],
+        ["Findings", "Water quality monitoring by community water boards, known as JASS, shows the most consistent association with adequate chlorination. Reported odds ratios reach 12; this compares outcome odds and does not mean that the probability increases twelvefold. Fees that cover operating costs support continued access to supplies. Interviews identify dosing difficulties and resistance to the taste and smell of chlorinated water."],
+        ["Policy relevance", "The recommendations prioritise community monitoring, operating finance and ongoing technical support. Chlorine provision requires follow-up to sustain its use. Findings describe associations in the districts studied; they do not provide causal estimates or nationally representative results."]
+      ]
+    }
+  },
+  {
+    "id": "saneamiento-alc",
+    "authors": "Andrés Soto Ticse",
+    "leadAuthor": true,
+    "url": "https://docs.google.com/document/d/1_A-fc9ywP_31nnmAR_teOPzCpcAaAaAl/edit",
+    "es": {
+      "title": "Sistematización de experiencias para la eliminación de la defecación al aire libre en América Latina y el Caribe",
+      "type": "Informe final",
+      "date": "Noviembre de 2025",
+      "scope": "América Latina y el Caribe. Documentación del periodo 2010 a 2025.",
+      "context": "Sistematización regional orientada al ODS 6.2.",
+      "intro": "Una revisión regional de intervenciones de saneamiento y de las condiciones necesarias para mantener su uso en comunidades con brechas de acceso.",
+      "sections": [
+        ["Objetivo", "Identificar prácticas y aprendizajes útiles para eliminar la defecación al aire libre en América Latina y el Caribe. El informe examina experiencias de expansión del saneamiento y presta atención a los contextos rurales y a las poblaciones en situación de vulnerabilidad."],
+        ["Metodología", "La revisión integra literatura académica y documentos institucionales con entrevistas semiestructuradas a cuatro especialistas. El informe identifica 17 experiencias relevantes a partir de 13 estudios documentales y los aportes de los expertos. La comparación considera la evidencia de reducción de la práctica y la posibilidad de adaptar las intervenciones a otros territorios."],
+        ["Hallazgos", "Las experiencias revisadas destacan el valor de la participación comunitaria y del acompañamiento posterior a la instalación de los servicios. La falta de recursos para mantenimiento y la discontinuidad institucional pueden favorecer el abandono de las soluciones. Las entrevistas aportan evidencia sobre tecnologías adaptadas a la disponibilidad de agua y sobre modelos de servicio para zonas rurales y periurbanas."],
+        ["Recomendaciones y alcance", "El informe propone financiar la operación de los servicios, fortalecer las capacidades locales e incorporar el seguimiento del uso sostenido de las instalaciones. También plantea integrar los enfoques de género e interculturalidad en la implementación. La evidencia tiene distinta calidad entre experiencias; la sistematización aporta aprendizajes comparados y no estima un efecto causal común para todos los programas."]
+      ]
+    },
+    "en": {
+      "title": "Review of experiences aimed at eliminating open defecation in Latin America and the Caribbean",
+      "type": "Final report",
+      "date": "November 2025",
+      "scope": "Latin America and the Caribbean. Documentation from 2010 to 2025.",
+      "context": "Regional evidence review aligned with SDG 6.2.",
+      "intro": "A regional review of sanitation interventions and the conditions needed to sustain their use in communities facing access gaps.",
+      "sections": [
+        ["Objective", "Identify practices and lessons that can support the elimination of open defecation in Latin America and the Caribbean. The report examines sanitation expansion, with attention to rural contexts and populations facing vulnerability."],
+        ["Methods", "The review combines academic and institutional literature with semi-structured interviews with four specialists. It identifies 17 relevant experiences from 13 documentary studies and expert contributions. The comparison considers evidence of reduced open defecation and the potential to adapt interventions to other territories."],
+        ["Findings", "The reviewed experiences highlight community participation and support after facilities are installed. Maintenance funding gaps and institutional discontinuity can lead to abandonment. Interviews provide insights into technologies suited to local water availability and service models for rural and peri-urban areas."],
+        ["Recommendations and scope", "The report recommends funding service operations, strengthening local capacity and monitoring sustained use of facilities. It also calls for gender and intercultural approaches in implementation. Evidence quality varies across experiences; the review offers comparative lessons rather than a common causal impact estimate for all programmes."]
+      ]
+    }
+  },
+  {
+    "id": "aerolineas-low-cost",
+    "url": "https://centrocompetencia.com/wp-content/uploads/2025/02/Aerolieneas_low_cost.pdf",
+    "authors": "Joaquín Pérez Delgado, Gustavo Sebastián Sánchez García, Andrés Soto Ticse",
+    "es": {
+      "title": "Impacto de la entrada de aerolíneas low-cost en la competencia del mercado aeronáutico peruano",
+      "type": "Artículo de investigación",
+      "date": "Febrero de 2025",
+      "scope": "Perú, 2000 a 2023",
+      "context": "Investigaciones CeCo",
+      "intro": "Competencia entre aerolíneas tradicionales y operadores de bajo costo.",
+      "sections": [
+        ["Enfoque", "Combina datos de pasajeros de la DGAC e índices de concentración con modelos de predación y diferenciación vertical."],
+        ["Conclusión y alcance", "Interpreta la adaptación de tarifas y servicios ante una demanda low-cost creciente. La evidencia es descriptiva e ilustrativa; no estima un efecto causal de la entrada."]
+      ]
+    },
+    "en": {
+      "title": "Low-cost airline entry and competition in Peru’s aviation market",
+      "type": "Research article",
+      "date": "February 2025",
+      "scope": "Peru, 2000 to 2023",
+      "context": "CeCo Research",
+      "intro": "Competition between traditional airlines and low-cost carriers.",
+      "sections": [
+        ["Approach", "Combines DGAC passenger data and concentration indices with models of predation and vertical differentiation."],
+        ["Conclusion and scope", "Interprets fare and service adaptation as low-cost demand expands. Evidence is descriptive and illustrative; it does not estimate a causal entry effect."]
+      ]
+    }
+  },
+  {
+    "id": "criptoinvierno",
+    "url": "https://gestion.pe/blog/te-lo-cuento-facil/2022/10/criptoinvierno-se-inicia-un-nuevo-tipo-de-recesion.html/",
+    "authors": "Andrés Soto",
+    "es": {
+      "title": "Criptoinvierno: ¿Se inicia un nuevo tipo de recesión?",
+      "type": "Artículo de divulgación",
+      "date": "31 de octubre de 2022",
+      "scope": "Mercado de criptoactivos, contexto de 2022",
+      "context": "Gestión · Te lo cuento fácil",
+      "intro": "Una explicación del retroceso del mercado cripto y su relación con la incertidumbre económica.",
+      "sections": [
+        ["Enfoque", "Compara el criptoinvierno con una recesión y examina la preferencia por activos percibidos como más estables."],
+        ["Aporte y alcance", "Aborda la especulación y la necesidad de informarse antes de invertir. Es divulgación económica de 2022, sin una estimación econométrica ni una fecha prevista de recuperación."]
+      ]
+    },
+    "en": {
+      "title": "Crypto winter: the beginning of a new kind of recession?",
+      "type": "Economic commentary",
+      "date": "31 October 2022",
+      "scope": "Cryptoasset markets, 2022 context",
+      "context": "Gestión · Te lo cuento fácil",
+      "intro": "An explanation of the crypto downturn and its relationship with economic uncertainty.",
+      "sections": [
+        ["Approach", "Compares crypto winter with recession and examines preferences for assets perceived as more stable."],
+        ["Contribution and scope", "Discusses speculation and informed investment decisions. This is commentary from 2022, without an econometric estimate or a predicted recovery date."]
+      ]
+    }
+  }
+]
