@@ -18,7 +18,7 @@
     const element = document.createElementNS(ns, 'circle');
     element.setAttribute('fill', '#ffffff');
     svg.append(element);
-    const pulse = marker ? {duration: 3.5 + Math.random() * 2, phase: 0,
+    const pulse = marker ? {duration: 2.5 + Math.random() * 1.5, phase: 0,
       color: Math.floor(Math.random() * colors.length)} : null;
     if (pulse) pulse.phase = Math.random() * pulse.duration;
     points.push({x: Math.cos(phi) * Math.sin(theta), y: Math.sin(phi),
@@ -61,7 +61,7 @@
     if (document.hidden || motion.matches) return;
     const elapsed = lastTime ? Math.min((time - lastTime) / 1000, 0.05) : 0;
     lastTime = time;
-    if (!dragging) angle -= elapsed * 0.20;
+    if (!dragging) angle -= elapsed * 0.26;
     for (const point of points) {
       if (!point.pulse) continue;
       point.pulse.phase += elapsed;
