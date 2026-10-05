@@ -18,7 +18,7 @@
     const element = document.createElementNS(ns, 'circle');
     element.setAttribute('fill', '#ffffff');
     svg.append(element);
-    const pulse = marker ? {duration: 8 + Math.random() * 4, phase: 0,
+    const pulse = marker ? {duration: 3.5 + Math.random() * 2, phase: 0,
       color: Math.floor(Math.random() * colors.length)} : null;
     if (pulse) pulse.phase = Math.random() * pulse.duration;
     points.push({x: Math.cos(phi) * Math.sin(theta), y: Math.sin(phi),
@@ -48,8 +48,10 @@
       point.element.setAttribute('visibility', depth < 0 ? 'hidden' : 'visible');
       if (point.pulse) {
         point.element.setAttribute('fill', colors[point.pulse.color]);
-        const opacity = motion.matches ? 1
-          : Math.sin(Math.PI * point.pulse.phase / point.pulse.duration) ** 2;
+        const progress = point.pulse.phase / point.pulse.duration;
+        // A gentle rise followed by a shorter fade, with no abrupt flashing.
+        const envelope = progress < 0.62 ? progress / 0.62 : (1 - progress) / 0.38;
+        const opacity = motion.matches ? 1 : Math.sin(Math.PI * envelope / 2) ** 2;
         point.element.setAttribute('opacity', opacity.toFixed(3));
       }
     }
@@ -59,7 +61,7 @@
     if (document.hidden || motion.matches) return;
     const elapsed = lastTime ? Math.min((time - lastTime) / 1000, 0.05) : 0;
     lastTime = time;
-    if (!dragging) angle += elapsed * 0.12;
+    if (!dragging) angle -= elapsed * 0.20;
     for (const point of points) {
       if (!point.pulse) continue;
       point.pulse.phase += elapsed;
