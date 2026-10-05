@@ -12,19 +12,24 @@
     ? 'Globo de puntos en 3D. Arrastra o usa las flechas para girarlo.'
     : '3D dotted globe. Drag or use the arrow keys to rotate it.');
   const points = [];
+  const colors = ['#ff5656', '#48bfff', '#52e58c', '#ffe35b'];
   function dot(lat, lon, marker = false) {
     const phi = lat * Math.PI / 180, theta = lon * Math.PI / 180;
     const element = document.createElementNS(ns, 'circle');
     element.setAttribute('fill', '#ffffff');
     svg.append(element);
+    const pulse = marker ? {duration: 8 + Math.random() * 4, phase: 0,
+      color: Math.floor(Math.random() * colors.length)} : null;
+    if (pulse) pulse.phase = Math.random() * pulse.duration;
     points.push({x: Math.cos(phi) * Math.sin(theta), y: Math.sin(phi),
-      z: Math.cos(phi) * Math.cos(theta), marker, element});
+      z: Math.cos(phi) * Math.cos(theta), marker, pulse, element});
   }
   for (let lat = -84; lat <= 84; lat += 8) {
     const count = Math.max(8, Math.round(56 * Math.cos(lat * Math.PI / 180)));
     for (let i = 0; i < count; i++) dot(lat, i * 360 / count);
   }
   dot(25, -28, true); dot(-30, 35, true); dot(5, 68, true);
+  dot(40, 145, true); dot(-20, 205, true); dot(0, 265, true);
   image.replaceWith(svg);
   let angle = 0, tilt = -0.12, dragging = false, lastX = 0, lastY = 0;
   let lastTime = 0, frame = 0;
@@ -41,6 +46,12 @@
       point.element.setAttribute('cy', (200 + 168 * y * perspective).toFixed(2));
       point.element.setAttribute('r', ((point.marker ? 7 : 2.1) * perspective).toFixed(2));
       point.element.setAttribute('visibility', depth < 0 ? 'hidden' : 'visible');
+      if (point.pulse) {
+        point.element.setAttribute('fill', colors[point.pulse.color]);
+        const opacity = motion.matches ? 1
+          : Math.sin(Math.PI * point.pulse.phase / point.pulse.duration) ** 2;
+        point.element.setAttribute('opacity', opacity.toFixed(3));
+      }
     }
   }
   function tick(time) {
@@ -49,6 +60,15 @@
     const elapsed = lastTime ? Math.min((time - lastTime) / 1000, 0.05) : 0;
     lastTime = time;
     if (!dragging) angle += elapsed * 0.12;
+    for (const point of points) {
+      if (!point.pulse) continue;
+      point.pulse.phase += elapsed;
+      if (point.pulse.phase >= point.pulse.duration) {
+        point.pulse.phase %= point.pulse.duration;
+        // Pick a different color while the marker is fully faded out.
+        point.pulse.color = (point.pulse.color + 1 + Math.floor(Math.random() * 3)) % colors.length;
+      }
+    }
     render();
     frame = requestAnimationFrame(tick);
   }
@@ -85,3 +105,4 @@
   motion.addEventListener('change', resume);
   render(); resume();
 })();
+
